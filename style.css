@@ -1,0 +1,364 @@
+:root {
+  --clr-accent: #d9964a;
+  --clr-blue: #0b5089;
+  --clr-dark: #2b2b2b;
+  --clr-light: #ffffff;
+  --clr-border: #f9e9d7;
+  --clr-gray: #666666;
+  --font-primary: "Mulish", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  color: var(--clr-dark);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.header {
+  background-color: var(--clr-semi-light);
+  padding: 3rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header h5 {
+  font-style: var(--font-primary);
+  font-size: 2.5rem;
+}
+
+.banner {
+  padding-top: 10rem;
+  background-color: var(--clr-border);
+}
+
+.banner .banner__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.banner .banner__wrapper .banner__left h5 {
+  font-size: 2.3rem;
+  color: var(--clr-accent);
+}
+.banner .banner__wrapper .banner__left h1 {
+  font-size: 5rem;
+}
+.banner .banner__wrapper .banner__left p {
+  text-align: justify;
+  width: 85%;
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  padding-bottom: 3rem;
+}
+.banner .banner__wrapper .banner__left a {
+  background-color: var(--clr-accent);
+  padding: 1.2rem;
+  color: var(--clr-light);
+}
+.banner .banner__wrapper .banner__right img {
+  padding-bottom: 7rem;
+}
+
+.WeeklyRecipe {
+  margin-top: 3rem;
+}
+
+.WeeklyRecipe h3 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  color: var(--clr-accent);
+  font-weight: bold;
+}
+.WeeklyRecipe h3::before {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  background-color: var(--clr-accent);
+  width: 57rem;
+  height: 0.2rem;
+  bottom: 1rem;
+  left: 1rem;
+  margin-right: 2rem;
+}
+
+.WeeklyRecipe h3::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  background-color: var(--clr-accent);
+  width: 57rem;
+  height: 0.2rem;
+  bottom: 1rem;
+  right: 1rem;
+  margin-left: 2rem;
+}
+
+.WeeklyRecipe .WeeklyRecipe__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.WeeklyRecipe .WeeklyRecipe__wrapper .WeeklyRecipe__feauredRecipe img {
+  height: 40rem;
+}
+
+.WeeklyRecipe .WeeklyRecipe__wrapper .WeeklyRecipe__feauredRecipe h5 {
+  text-align: center;
+}
+
+.WeeklyRecipe
+  .WeeklyRecipe__wrapper
+  .WeeklyRecipe__feauredRecipe
+  h5:nth-child(even) {
+  color: var(--clr-accent);
+  letter-spacing: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.WeeklyRecipe
+  .WeeklyRecipe__wrapper
+  .WeeklyRecipe__feauredRecipe
+  h5:nth-child(odd) {
+  font-weight: 406000;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.WeeklyRecipe .WeeklyRecipe__wrapper .WeeklyRecipe__feauredRecipe p {
+  text-align: justify;
+}
+
+/* test */
+.recipeCollection {
+  padding-top: 15rem;
+}
+.recipeCollection h2 {
+  color: var(--clr-accent);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 25rem;
+}
+.recipeCollection h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  background-color: var(--clr-accent);
+  width: 57rem;
+  height: 0.2rem;
+  bottom: 1rem;
+  right: 1rem;
+  margin-left: 2rem;
+}
+
+.recipeCollection .recipeCollection__content {
+  max-width: 140rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 6rem 0;
+}
+.recipeCollection .recipeCollection__items .recipeCollection__right {
+  max-width: 50rem;
+  text-align: justify;
+}
+.recipeCollection .recipeCollection__items .recipeCollection__left img {
+  width: 65rem;
+  height: 40rem;
+}
+.recipeCollection .recipeCollection__items .recipeCollection__right h3 {
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.recipeCollection .recipeCollection__items .recipeCollection__right p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.recipeCollection .recipeCollection__items .recipeCollection__right a {
+  background-color: var(--clr-accent);
+  padding: 1.2rem;
+  color: var(--clr-light);
+}
+.recipeCollections__wrapper:nth-of-type(odd) {
+  background-color: var(--clr-light);
+}
+.recipeCollection__wrapper:nth-of-type(even) {
+  background-color: var(--clr-semilight);
+}
+.recipeCollection .recipeCollection__items {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recipeCollection .recipeCollection__items:nth-child(1) {
+  justify-content: start;
+}
+
+.recipeCollection__wrapper:nth-of-type(even) .recipeCollection__items {
+  flex-direction: row-reverse;
+}
+.newsLetter {
+  background-image: url(./img/newsleter.jpeg);
+  background-size: cover;
+  height: 50vh;
+  opacity: 75%;
+}
+
+.newsLetter .newsLetter_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-top: 15rem;
+}
+.newsLetter .newsLetter_wrapper h4 {
+  color: var(--clr-light);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.newsLetter .newsLetter_wrapper p {
+  width: 50%;
+  text-align: center;
+  color: var(--clr-light);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.newsLetter .newsLetter_wrapper .newsLetter__subscribewrapper {
+  position: relative;
+}
+
+.newsLetter .newsLetter_wrapper .newsLetter__subscribewrapper input {
+  background: var(--clr-light);
+  border-style: none;
+  height: 40px;
+  width: 400px;
+  position: relative;
+}
+.newsLetter .newsLetter_wrapper .newsLetter__subscribewrapper a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 2rem;
+  background: var(--clr-accent);
+  color: white;
+  border: none;
+  text-align: center;
+  padding-top: 1rem;
+}
